@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6 benches programs</title>
+  </head>
+  <body>
+    <!-- script starts here -->
+    <script type="text/javascript">
+      // write program to find gcd of two numbers
+
+      function gcd(num1, num2) {
+        if (num2 == 0) return num1;
+        else {
+          var rem = num1 % num2;
+          return gcd(num2, rem);
+        }
+      }
+      document.write(gcd(34, 18));
+      document.write("<br>");
+
+      // // write program to find the LCM
+
+      function gcd(num1, num2) {
+        if (num2 == 0) {
+          return num1;
+        } else var rem = num1 % num2;
+        return gcd(num2, rem);
+      }
+      function lcm(num1, num2) {
+        return (num1 * num2) / gcd(num1, num2);
+      }
+      document.write(lcm(4, 6));
+      document.write("<br>");
+
+      // // write program to print all the prime numbers
+
+      // input / output
+
+      var a = "gokula";
+      var c = 1;
+      var x = true;
+      var b = typeof a;
+      var d = typeof c;
+      var z = typeof x;
+      document.write("the date type of a variable is " + b);
+      document.write("<br>");
+      document.write("the date type of a variable is " + d);
+      document.write("<br>");
+      document.write("the date type of a variable is " + z);
+      document.write("<br>");
+
+      // // sum of two number (a+b)(a*b)(a/b)(a%b)(a-b)
+
+      var a = 10;
+      var b = 2;
+      var sum = a * b;
+      document.write("the addition of a number is " + sum);
+      document.write("<br>");
+      // // substraction
+
+      var c = 10;
+      var d = 10;
+      var sub = c - d;
+      document.write("the substration of a number is " + sub);
+      document.write("<br>");
+
+      // // multiplication
+
+      var e = 10;
+      var f = 10;
+      var mul = e * f;
+      document.write("the multiplication of two number is " + mul);
+      document.write("<br>");
+
+      // // division
+
+      var g = 20;
+      var h = 10;
+      div = g / h;
+      document.write("the division of a numbers is " + div);
+      document.write("<br>");
+
+      // // perimeter of rectangle 2(l+b);
+
+      var len = 2;
+      var breadth = 2;
+      var perimeter = 2 * (len + breadth);
+      document.write("the perimeter of a rectangle is " + perimeter);
+      document.write("<br>");
+
+      // // // area formula (len*breadth)
+
+      var length1 = 2;
+      var breadth1 = 4;
+      var area = length1 * breadth1;
+      document.write("the area of rectangle is " + area);
+      document.write("<br>");
+
+      // // // diameter 2(radius)
+
+      var radius = 2;
+      var diameter = 2 * radius;
+      document.write("the diameter of a radius is " + diameter);
+      document.write("<br>");
+
+      // // // circumferrance  2 pi r;
+
+      var radius1 = 20;
+      var circumferance = 2 * 3.142 * radius1;
+      document.write("the value of circumferance is " + circumferance);
+      document.write("<br>");
+
+      // // // area pi r ^2
+
+      var radius2 = 20;
+      var area1 = 3.142 * radius2 * radius2;
+      document.write("the area of circle is " + area1);
+      document.write("<br>");
+
+      // // cm to meter (cm/100);
+      var length1 = 100;
+      var meter = length1 / 100;
+      document.write("the length of a meter is " + meter);
+      document.write("<br>");
+
+      // // length /100000
+
+      var length2 = 100;
+      var kilometer = length2 / 100000;
+      document.write(
+        "the value of " + length2 + " in kilometer is" + kilometer
+      );
+      document.write("<br>");
+
+      // // celsius to fahreheit
+
+      function fahreheit(celsius) {
+        var a = (celsius * 9) / 5 + 32;
+        return a;
+      }
+      document.write("from converting celsius to fahreheit is " + fahreheit(1));
+      document.write("<br>");
+
+      // // fahreheit to celsius
+
+      function celsius(fahreheit) {
+        var a = ((fahreheit - 32) * 5) / 9;
+        return a;
+      }
+      document.write("from converting fahreheit to celsius is " + celsius(1));
+      document.write("<br>");
+
+      // // days into years and weak
+
+      var days = 36;
+      var weak = days / 7;
+      document.write(days + " is " + weak);
+      document.write("<br>");
+      var year = days / 365;
+      document.write(days + " is of " + year);
+      document.write("<br>");
+
+      // // power of x
+
+      var x = 3;
+      var y = 2;
+      var z = Math.pow(x, y);
+      document.write(x + " to the power of " + y + "is" + z);
+      document.write("<br>");
+
+      // // square of x
+
+      var m = 4;
+      var n = Math.sqrt(m);
+      document.write("the square root of " + m + "  is " + n);
+      document.write("<br>");
+
+      // // two enter 2 angles and find 3rd angle of a triangle
+
+      var j = 2;
+      var s = 2;
+      var k = 180 - (j + s);
+      document.write("the third angle of a triangle is " + k);
+      document.write("<br>");
+
+      // // enter base and height find area of triangle
+
+      var base = 2;
+      var height = 2;
+      var area = (height * base) / 2;
+      document.write("the area of a triangle is " + area);
+      document.write("<br>");
+
+      // equilateral triangles
+
+      var s = 5;
+      var area = s ** 2 * (3 ** (1 / 2) / 4);
+      document.write("the equilateral triangle area is " + area);
+      document.write("<br>");
+
+      // // student marks detail
+
+      var a = 10,
+        b = 20,
+        c = 30,
+        d = 10,
+        e = 50;
+      var total = a + b + c + d + e;
+      var average = total / 5;
+      var percentage = (total / 500) * 100;
+      document.write("the total of 5 subject is " + total);
+      document.write("<br>");
+      document.write("the average  marks of 5 subject is " + average);
+      document.write("<br>");
+      document.write("the percentage of all 5 subject is " + percentage);
+      document.write("<br>");
+
+      // // // simple interest
+
+      var pri = 1000,
+        time = 2,
+        rate = 3;
+      var simple_interest = (pri + time + rate) / 100;
+      document.write("the value of simple interest is " + simple_interest);
+      document.write("<br>");
+
+      // // // compound interest
+
+      var p = 1000,
+        t = 2,
+        r = 3,
+        n = 2;
+      var compound_interest = p * (1 + r / n) ** n * t;
+      document.write(compound_interest);
+      document.write("<br>");
+    </script>
+  </body>
+</html>
